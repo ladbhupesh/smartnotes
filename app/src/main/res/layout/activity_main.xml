@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent"
+    tools:context="com.truiton.mobile.vision.BHUPESH.MainActivity"
+    app:umanoPanelHeight="50dp"
+    app:umanoShadowHeight="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/todo"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="485dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginRight="158dp"
+            android:background="@drawable/capture_button"
+            android:text="@string/cam" />
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slideup"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/round_layout"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_layout">
+            <LinearLayout
+                android:id="@+id/ResultsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout"
+                android:orientation="vertical"
+                android:layout_marginTop="-1dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#c7fce5"
+            android:textColor="@color/black"
+            android:text="@string/scan_results"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

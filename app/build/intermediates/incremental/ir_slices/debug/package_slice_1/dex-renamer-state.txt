@@ -1,0 +1,4 @@
+#Sun Aug 18 23:02:13 IST 2019
+base.0=/home/projects/VISION/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex
